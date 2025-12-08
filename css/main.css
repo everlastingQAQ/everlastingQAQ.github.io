@@ -669,6 +669,33 @@ code.hljs {
   right: 0;
   top: 0;
 }
+.expand-btn {
+  bottom: 0;
+  color: var(--highlight-foreground);
+  cursor: pointer;
+  display: none;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+}
+.fold-cover {
+  background-image: linear-gradient(to top, var(--highlight-background) 0, rgba(0,0,0,0) 100%);
+  bottom: 0;
+  display: none;
+  height: 50px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+.highlight-fold {
+  max-height: 500px;
+  overflow-y: hidden !important;
+}
+.highlight-fold .expand-btn,
+.highlight-fold .fold-cover {
+  display: block;
+}
 code,
 kbd,
 figure.highlight,
@@ -1480,7 +1507,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #e9ffc2;
+    background: #869af7;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
